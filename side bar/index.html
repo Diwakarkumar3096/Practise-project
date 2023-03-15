@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offcanvas</title>
+    <style>
+        *{
+            margin:0px;
+            font-family: sans-serif;
+            padding:0px;
+        }
+        .ticon{
+            margin:10px;
+           font-size:40px;
+           cursor: pointer;
+       }.menu{
+        top:0px;
+        width: 20%;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        left:-25%;
+        transition: 1s;
+
+       }.menu h2{
+        color:white;
+        padding:25px;
+       }
+       .menu ul li a{
+        display:block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+       }.close{
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+       }
+       .smenu{
+        left:0%;
+        
+       }
+    </style>
+    
+</head>
+<body>
+    <span class="ticon" onclick="showMenu()">&#9776</span>
+    
+    <div class="menu">
+        <span class="close" onclick="closeMenu()">&times</span>
+        <h2>LOGO</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+              <li><a href="#">Course</a></li>
+               <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+                 <li><a href="#">Enquery</a></li>
+        </ul>
+
+    </div>
+
+</body>
+<script type="text/javascript">
+    function showMenu(){
+        var m=document.querySelector('.menu');
+        m.classList.add('smenu');
+    }
+    function closeMenu(){
+        var r=document.querySelector('.menu');
+        r.classList.remove('smenu');
+    }
+</script>
+</html>
