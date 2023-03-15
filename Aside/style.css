@@ -1,0 +1,56 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: brown;
+    color: aliceblue;
+}
+.conatiner{
+    height: 100vh;
+    width: 100%;
+
+}
+.header{
+    margin-top: 0;
+    width:100%;
+    background-color: aqua;
+
+}
+.navigation{
+    position: relative;
+    width:500px;
+    float: right;
+    right: 150px;
+    top: -30px;
+    color: blue;
+    
+    
+}
+.ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    top:10px;
+}
+.main{
+    width: 75%;
+}
+.aside{
+    height: 500px;
+    position: relative;
+    width: 20%;
+    float: right;
+    right: -50px;
+    background-color: blueviolet;
+
+}
+.aside form{
+    padding: 30px;
+
+}
